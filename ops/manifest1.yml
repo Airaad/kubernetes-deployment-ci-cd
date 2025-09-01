@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
       - name: my-app-container
-        image: airaad962/do-test-app:62542a236588e5bc5556645584b78146f035b59c
+        image: airaad962/kubernetes-test-app:latest
         ports:
         - containerPort: 3000
 

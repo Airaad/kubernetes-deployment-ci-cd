@@ -23,4 +23,7 @@ jobs:
           context: .
           file: ./Dockerfile
           push: true
-          tags: ${{ secrets.DOCKERHUB_USERNAME }}/kubernetes-test-app:${{ github.sha }}
+          tags: |
+            ${{ secrets.DOCKERHUB_USERNAME }}/kubernetes-test-app:${{ github.sha }}
+            ${{ secrets.DOCKERHUB_USERNAME }}/kubernetes-test-app:latest
+
