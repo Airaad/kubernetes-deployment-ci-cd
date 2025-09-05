@@ -12,6 +12,6 @@ app.get("/cpu", (req, res) => {
   res.send("Running CPU intensive task");
 });
 
-app.listen(3000, () => {
+app.listen(port, () => {
   console.log("Server started");
 });
